@@ -1,3 +1,4 @@
+/*
 --TIME SERIES ANALYSIS--
 
 -- Data set: Paytm
@@ -12,7 +13,8 @@
 -- Link download dataset: https://drive.google.com/drive/folders/1zLCSSH4vpw-xVsHXKNJFGniCsJ4M1xjT?usp=sharing
 
 --Task: Select only these sub-categories in the list (Electricity, Internet and Water), you need to calculate the number of successful paying customers for each month (from 2019 to 2020). Then find the percentage change from the first month (Jan 2019) for each subsequent month.--
-
+-- Skills used: Joins, CTE, Sub Queries, Aggregate Functions, Converting Data Types
+*/
 with sum_tab as (
       select year(transaction_time) as year 
       , month(transaction_time) as month
